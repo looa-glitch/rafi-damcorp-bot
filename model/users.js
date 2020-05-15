@@ -5,8 +5,12 @@ var fallback = new Schema({
 	name: String,
     company: String,
     email: String,
-    location: String,
+    location: {
+		latitude : String,
+		longitude : String
+	},
     phone: String,
+    ticket: String,
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now }
 });

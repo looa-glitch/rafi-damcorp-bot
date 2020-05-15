@@ -68,7 +68,7 @@ controller.ready(() => {
             results = await controller.plugins.cms.testTrigger(bot, message);
 
             if (results !== false) {
-                console.log("Yes");
+                // console.log("Yes");
                 // do not continue middleware!
                 return false;
             }
